@@ -14,9 +14,9 @@ import { ContentPartners } from "@/components/pages/ContentPartners";
 import { ContentProjects } from "@/components/pages/ContentProjects";
 import { ContentAchievements } from "@/components/pages/ContentAchievements";
 
-export type DashboardPage = 
-  | 'overview' 
-  | 'applications' 
+export type DashboardPage =
+  | 'overview'
+  | 'applications'
   | 'analytics'
   | 'content-story'
   | 'content-leaders'
@@ -73,3 +73,5 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+
