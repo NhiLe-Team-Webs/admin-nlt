@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ReactQuill from "react-quill";
+import ReactQuill from "react-quill-new";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ReactQuill from "react-quill";
+import ReactQuill from "react-quill-new";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
@@ -53,7 +53,7 @@ export const ContentStory = () => {
           <Button onClick={handleSave}>Lưu thay đổi</Button>
         </div>
       </div>
-      
+
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
           <div className="bg-card p-6 rounded-2xl shadow-lg border border-border">
@@ -69,14 +69,14 @@ export const ContentStory = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="lg:col-span-1">
           <div className="bg-card p-6 rounded-2xl shadow-lg border border-border">
             <h3 className="text-lg font-bold text-card-foreground mb-4">Ảnh đại diện</h3>
             <div className="aspect-video bg-accent rounded-lg flex items-center justify-center border border-border overflow-hidden">
-              <img 
+              <img
                 src={imageUrl}
-                alt="Story preview" 
+                alt="Story preview"
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
@@ -87,7 +87,7 @@ export const ContentStory = () => {
               className="hidden"
               id="image-upload"
             />
-            <Button 
+            <Button
               variant="outline"
               onClick={() => document.getElementById('image-upload')?.click()}
               className="mt-4 w-full"
